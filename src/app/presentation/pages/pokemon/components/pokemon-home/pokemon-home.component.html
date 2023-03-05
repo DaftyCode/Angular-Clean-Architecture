@@ -1,0 +1,9 @@
+<div class="container" *ngIf="pokemonCorrect">
+  <app-pokemon-image [imageUrl]="pokemonCorrect.url" [isAnswered]="isAnswered"></app-pokemon-image>
+  <app-pokemon-options [pokemonOptions]="pokemonList" (sendResponse)="userResponse($event)"></app-pokemon-options>
+  <app-pokemon-solution
+    [isCorrect]="isCorrect"
+    [isAnswered]="isAnswered"
+    [pokemon]="pokemonCorrect"
+    (isNewGame)="newGame($event)"></app-pokemon-solution>
+</div>

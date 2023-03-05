@@ -1,0 +1,38 @@
+{
+  "editor.rulers": [120],
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": ["source.fixAll.eslint", "source.fixAll.markdownlint"],
+  "eslint.alwaysShowStatus": true,
+  "eslint.validate": ["typescript", "javascript", "html"],
+  "search.exclude": {
+    "**/.history": true,
+    "**/documentation": true,
+    "**/node_modules": true,
+    "**/coverage": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.eol": "\n",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+  "i18nJsonEditor.forceKeyUPPERCASE": false
+}

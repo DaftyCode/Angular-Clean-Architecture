@@ -4,7 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('src/app/presentation/pages/pokemon/pokemon.module').then(m => m.PokemonModule),
+    loadComponent: () =>
+      import('./components/pokemon-home/pokemon-home.component').then(mod => mod.PokemonHomeComponent),
   },
   {
     path: '**',
@@ -13,7 +14,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class PokemonRoutingModule {}

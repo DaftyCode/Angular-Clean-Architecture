@@ -1,0 +1,8 @@
+<div class="solution-container" *ngIf="isAnswered">
+  <h3>
+    <span *ngIf="isCorrect">Bien hecho,El pokemón es </span>
+    <span *ngIf="!isCorrect">Has fallado, el pokemón era </span>
+    {{ pokemon?.name }}
+  </h3>
+  <button (click)="newGame()">Nuevo Juego</button>
+</div>

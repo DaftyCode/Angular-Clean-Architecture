@@ -1,0 +1,108 @@
+{
+  "root": true,
+  "ignorePatterns": ["projects/**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "project": ["tsconfig.json", "e2e/tsconfig.json"],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:import/recommended",
+        "airbnb-typescript/base",
+        "plugin:prettier/recommended",
+        "plugin:import/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings"
+      ],
+      "rules": {
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ],
+
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ],
+        "@typescript-eslint/lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+        "no-unused-vars": "warn",
+        "@typescript-eslint/no-unused-vars": "error",
+        "prettier/prettier": ["off", { "singleQuote": true }],
+        "import/no-duplicates": "error",
+        "import/no-unused-modules": "error",
+        "import/no-unresolved": "error",
+        "import/named": "error",
+        "import/order": [
+          "warn",
+          {
+            "alphabetize": {
+              "order": "asc",
+              "caseInsensitive": false
+            },
+            "newlines-between": "always",
+            "groups": ["external", "builtin", ["parent", "sibling", "index"]],
+            "pathGroups": [
+              {
+                "pattern": "{@angular/**,rxjs,rxjs/operators}",
+                "group": "external",
+                "position": "before"
+              }
+            ],
+            "pathGroupsExcludedImportTypes": []
+          }
+        ]
+      },
+      "settings": {
+        "import/parsers": {
+          "@typescript-eslint/parser": [".ts", ".tsx", ".spec.ts"]
+        },
+        "import/resolver": {
+          "typescript": {
+            "alwaysTryTypes": true
+          }
+        }
+      }
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "rules": {
+        "@angular-eslint/template/use-track-by-function": "error"
+      }
+    },
+    {
+      "files": ["*.component.ts"],
+      "extends": ["plugin:@angular-eslint/template/process-inline-templates"]
+    },
+    {
+      "files": ["src/**/*.spec.ts", "src/**/*.d.ts"],
+      "parserOptions": {
+        "project": "**/tsconfig.spec.json"
+      },
+      "extends": ["plugin:jasmine/recommended"],
+      "plugins": ["jasmine"],
+      "env": {
+        "jasmine": true
+      },
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "warn",
+        "@typescript-eslint/lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+        "prettier/prettier": ["off", { "singleQuote": true }]
+      }
+    }
+  ]
+}

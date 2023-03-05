@@ -1,0 +1,9 @@
+<div class="options-container" *ngIf="pokemonOptions">
+  <button
+    *ngFor="let pokemon of pokemonOptions; trackBy: trackByFunc"
+    class="btn"
+    (click)="userResponse(pokemon)"
+    [disabled]="userAnswered">
+    {{ pokemon.name }}
+  </button>
+</div>

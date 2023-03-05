@@ -1,0 +1,11 @@
+<div class="image-container">
+  <h1>¿Quién es este Pokemón?</h1>
+  <div *ngIf="imageUrl; else noImagen">
+    <img [src]="imageUrl" alt="Pokemon image" [ngClass]="{ 'dark-image': !isAnswered }" />
+  </div>
+  <ng-template #noImagen>
+    <div>
+      <h3>No existe imagen lo siento :(</h3>
+    </div>
+  </ng-template>
+</div>
