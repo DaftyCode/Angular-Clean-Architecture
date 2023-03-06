@@ -25,7 +25,7 @@
       "@core/*": ["src/app/core/*"],
       "@data/*": ["src/app/data/*"],
       "@environments/*": ["src/environments/*"],
-      "@helpers/*": ["src/app/helpers/*"],
+      "@utils/*": ["src/app/utils/*"],
       "@presentation/*": ["src/app/presentation/*"]
     }
   },

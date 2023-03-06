@@ -2,14 +2,14 @@ import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { takeUntil } from 'rxjs';
 
-import { PokemonImageComponent } from '../pokemon-image/pokemon-image.component';
-import { PokemonOptionsComponent } from '../pokemon-options/pokemon-options.component';
-import { PokemonSolutionComponent } from '../pokemon-solution/pokemon-solution.component';
+import { PokemonImageComponent } from './components/pokemon-image/pokemon-image.component';
+import { PokemonOptionsComponent } from './components/pokemon-options/pokemon-options.component';
+import { PokemonSolutionComponent } from './components/pokemon-solution/pokemon-solution.component';
 
 import { GetPokemonsByIdUsecase } from '@core/usecases/pokemon/get-pokemon-by-id.usecase';
 import { PokemonEntity } from '@data/pokemon-repository/entities/pokemon-entity';
-import { generateRandomNumbers } from '@helpers/generate-random-numbers.helper';
 import { SubscriptionsBaseComponent } from '@presentation/components/subscriptions-base/subscriptions-base.component';
+import { generateRandomNumbers } from '@utils/generate-random-numbers-utils';
 
 @Component({
   standalone: true,

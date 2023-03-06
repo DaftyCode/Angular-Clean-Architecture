@@ -2,7 +2,7 @@ import { NgIf, NgFor } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 import { PokemonEntity } from '@data/pokemon-repository/entities/pokemon-entity';
-import { TRACK_BY_ID_FUNCTION } from '@helpers/track-by-helper';
+import { TRACK_BY_ID_FUNCTION } from '@utils/track-by-utils';
 
 @Component({
   selector: 'app-pokemon-options',
