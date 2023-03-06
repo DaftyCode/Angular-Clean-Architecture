@@ -4,7 +4,7 @@ Inspirado por el libro del `Tio Bob`, Clean Architecture, me surgió la idea de 
 
 Este ejemplo es un juego basado en el pokeApi, me gustaba la idea de crear un ejemplo, pero me gustaba mucho más que ese ejemplo fuera algo con sentido y de todo eso nació este repo.
 
-Esta creado con Angular 15 y con los nuevos Standalone components, ya que hacía algo nuevo me apetecía probar los nuevos componentes que aún no los había probado, si veo que tiene aceptación haremos una nueva versión con las signals, la nueva reactividad que Angular nos presentara oficialmente muy pronto.
+Esta creado con Angular 15 y con los nuevos Standalone components, ya que era algo nuevo que me apetecía probar, si veo que tiene aceptación haremos una nueva versión con las signals, la nueva reactividad que Angular nos presentara oficialmente muy pronto.
 
 Se que hay formas más fáciles y mucho mejores de traerse los 4 pokemons pero use esta para poder usar algún mapper asi que no lo tengáis en cuenta.
 
