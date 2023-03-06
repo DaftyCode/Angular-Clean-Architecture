@@ -1,6 +1,6 @@
 # CleanArchitecture
 
-Inspirado por el libro del `Tio Bob`, Clean Architecture me surgió la idea de intentar crear algo asi en Angular (lenguaje que utilizo en mi día a día) y después de investigar y ver algunos ejemplos he dado vida al mío propio.
+Inspirado por el libro del `Tio Bob`, Clean Architecture, me surgió la idea de intentar crear algo asi en Angular (lenguaje que utilizo en mi día a día) y después de investigar y ver algunos ejemplos he dado vida al mío propio.
 
 Este ejemplo es un juego basado en el pokeApi, me gustaba la idea de crear un ejemplo, pero me gustaba mucho más que ese ejemplo fuera algo con sentido y de todo eso nació este repo.
 
