@@ -1,5 +1,17 @@
 # CleanArchitecture
 
+Inspirado por el libro del `Tio Bob`, Clean Architecture me surgió la idea de intentar crear algo asi en Angular (lenguaje que utilizo en mi día a día) y después de investigar y ver algunos ejemplos he dado vida al mío propio.
+
+Este ejemplo es un juego basado en el pokeApi, me gustaba la idea de crear un ejemplo, pero me gustaba mucho más que ese ejemplo fuera algo con sentido y de todo eso nació este repo.
+
+Esta creado con Angular 15 y con los nuevos Standalone components, ya que hacía algo nuevo me apetecía probar los nuevos componentes que aún no los había probado, si veo que tiene aceptación haremos una nueva versión con las signals, la nueva reactividad que Angular nos presentara oficialmente muy pronto.
+
+Se que hay formas más fáciles y mucho mejores de traerse los 4 pokemons pero use esta para poder usar algún mapper asi que no lo tengáis en cuenta.
+
+La estructura pienso que se puede dejar mucho mejor y respetar la que Angular nos propone en muchísima mayor medida pero asi se ve mucho más claro que es cada cosa.
+
+Nada más, espero que os guste y si veis que podeis aportar algo no dudéis en hacerlo.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
 
 ## Development server
