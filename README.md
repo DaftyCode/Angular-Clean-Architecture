@@ -10,6 +10,8 @@ Se que hay formas más fáciles y mucho mejores de traerse los 4 pokemons pero u
 
 La estructura pienso que se puede dejar mucho mejor y respetar la que Angular nos propone en muchísima mayor medida pero asi se ve mucho más claro que es cada cosa.
 
+El objetivo de este repositorio es proporcionar un ejemplo claro y conciso de cómo implementar la Arquitectura Limpia en una aplicación de Angular. Si eres un desarrollador que busca aprender cómo aplicar esta arquitectura en tus propios proyectos, este repositorio es una excelente manera de comenzar. También puedes clonar este repositorio y usarlo como base para tu propia aplicación de Angular y usar tu propia estructura.
+
 Nada más, espero que os guste y si veis que podeis aportar algo no dudéis en hacerlo.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
